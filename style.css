@@ -121,6 +121,15 @@ section{
     font-weight: 700;
     text-transform: uppercase;
 }
+#invitationcard{
+    width: 475px;
+    height: 90vh;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
 
 /* responsive */
 @media (max-width: 991px) {
