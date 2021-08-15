@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">R&hearts;D</a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#invitation">Inviatation</a></li>
+                <li><a href="#youtube">Youtube</a></li>
+                <li><a href="#pics">Photos</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="invitation">invitation</section>
+    <section id="youtube">Youtube</section>
+    <section id="pics">Photos</section>
+    <section id="rsvp">RSVP</section>
+    <script>
+        const header = document.getElementById('header');
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+        document.onclick = function(e){
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
