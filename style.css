@@ -153,4 +153,8 @@ section{
         justify-content: center;
         align-items: center;
     }
+    #invitationcard{
+        width: 100vw;
+        height: 90vh;
+    }
 }
