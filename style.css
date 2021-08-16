@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -121,6 +122,11 @@ section{
     font-weight: 700;
     text-transform: uppercase;
 }
+#youtube{
+    font-size: 9vw;
+    color: #f7226a;
+    font-family: 'Hachi Maru Pop', cursive;
+}
 #invitationcard{
     width: 475px;
     height: 90vh;
@@ -128,7 +134,71 @@ section{
     top: 54%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.wrapper{
+    display: flex;
+    max-width: 95vw;
+    max-height: 90vh;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+.wrapper .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+.gallery span{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.gallery .image{
+    padding: 7px;
+    width: calc(90% / 3);
+}
+.gallery .image img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
 
+.swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 75vh;
 }
 
 /* responsive */
@@ -157,5 +227,15 @@ section{
     #invitationcard{
         width: 85vw;
         height: 90vh;
+    }
+    .gallery .image{
+        padding: 7px;
+        width: calc(90% / 2);
+    }
+}
+@media (max-width: 600px) {   
+    .gallery .image{
+        padding: 7px;
+        width: 100%;
     }
 }
